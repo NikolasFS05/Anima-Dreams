@@ -1,0 +1,63 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0px;
+    height: 100%;
+}
+
+ul {
+    list-style: none;
+}
+
+.container-info .somos {
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.container-info .historia {
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+    text-align: center;
+    max-width: 600px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.container-info .mision {
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+    text-align: center;
+    max-width: 600px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.container-info .vision {
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+    text-align: center;
+    max-width: 600px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.container-footer {
+    background-color: black;
+    color: white;
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}

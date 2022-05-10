@@ -1,0 +1,169 @@
+<!doctype html>
+<html lang="en, es">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Ofrecemos la mejor animación para cualquier tipo de
+                                    evento ofrenciendo gran variedad de shows que otorgan
+                                    gran entretenimiento. ¡Consúltanos!">
+    <meta name="keywords" content="animación, eventos, fiestas, entretenimiento">
+    <meta name="author" content="Nicolas Fonseca Sequera">
+    <title>Agencia de Eventos</title>
+
+    <!-- Font-Awesome Core Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" />
+    <!-- Bootstrap core CSS -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <!-- Custom styles for this page -->
+    <link rel="stylesheet" href="css/index.css">
+</head>
+
+<body>
+    <header>
+        <nav class="navbar navbar-expand-md navbar-dark bg-dark mb-4">
+            <div class="container-fluid">
+                <a class="navbar-brand logo" href="index.html">Anima-Dreams</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse"
+                    aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarCollapse">
+                    <ul class="navbar-nav me-auto mb-2 mb-md-0">
+                        <li class="nav-item">
+                            <a class="nav-link" aria-current="page" href="index.html">Inicio</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="equipo.html">Equipo</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="servicios.html">Servicios</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="empleos.html">Empleos</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link active" href="opiniones.html">Opiniones</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="acercade.html">Acerca de</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="creditos.html">Creditos</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <!--Hero-->
+    <div class="hero-image">
+        <div class="hero-text">
+            <h1>Opiniones</h1>
+            <p>Tu opinión es muy importante para nosotros.</p>
+            <button type="button" data-bs-toggle="modal" data-bs-target="#exampleModal">Dejanos tu opinión</button>
+        </div>
+    </div>
+
+    <div>
+        <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="exampleModalLabel">Opiniones</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                        <form role="form">
+                            <div class="form-group">
+                                <label for="exampleInputEmail">
+                                    Nombre:
+                                </label>
+                                <input type="text" class="form-control" id="nombre" />
+                            </div>
+                            <div class="form-group">
+                                <label for="exampleInputEmail"> Servicio utilizado: </label>
+                                <select class="form-select" aria-label="Default select example" id="servicio">
+                                    <option selected>Eligé un evento: </option>
+                                    <option value="Evento para matrimonio">Evento para matrimonio</option>
+                                    <option value="Evento empresarial">Evento empresarial</option>
+                                    <option value="Fiesta privada">Fiesta privada</option>
+                                    <option value="Fiesta infantil">Fiesta infantil</option>
+                                </select>
+                            </div>
+                            <div class="form-group">
+                                <label for="exampleInputEmail">
+                                    Opinión:
+                                </label>
+                                <textarea id="texto_opinion" cols="30" rows="10" class="form-control"></textarea>
+                            </div>
+                            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+                            <button type="Submit" class="btn btn-primary" onclick="registrarOpinion()">Enviar</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--<div class="row row-cols-1 row-cols-md-3 mb-3 text-center" id="opiniones">
+        <div class="col">
+            <div class="card mb-4 rounden-3 shadow-sm">
+                <div class="card-header py-3">
+                    <h4 class="my-0 fw-normal">Jeison Sanchez dice:</h4>
+                </div>
+                <div class="card-body-op">
+                    <p>El servicio: Matrimonio <br>
+                        Los contratamos principalmente porque desde el principio nos ofrecieron una asesoría muy
+                        profesional, se encargaron hasta del más mínimo detalle y nuestro matrimonio fue increíble. De
+                        verdad muchas gracias
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>-->
+    <div class="container">
+        <div class="my-3 p-3 bg-body rounded shadow-sm">
+            <h6 class="border-bottom pb-2 mb-0">Opiniones recientes</h6>
+            <div id="opiniones">
+                <div class="d-flex text-muted pt-3">
+                    <svg class="bd-placeholder-img flex-shrink-0 me-2 rounded" width="32" height="32"
+                        xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: 32x32"
+                        preserveAspectRatio="xMidYMid slice" focusable="false">
+                        <title>Placeholder</title>
+                        <rect width="100%" height="100%" fill="#6f42c1" /><text x="50%" y="50%" fill="#6f42c1"
+                            dy=".3em">32x32</text>
+                    </svg>
+
+                    <p class="pb-3 mb-0 small lh-sm border-bottom">
+                        <strong class="d-block text-gray-dark">@Jeison Sanchez <span class="text-muted fw-light">:Matrimonio </span></strong>
+                        Los contratamos principalmente porque desde el principio nos ofrecieron una asesoría muy
+                        profesional, se encargaron hasta del más mínimo detalle y nuestro matrimonio fue increíble. De
+                        verdad muchas gracias
+                    </p>
+                </div>                
+            </div>
+        </div>
+    </div>
+    <script src="js/opinion.js"></script>
+
+    <footer>
+        <div class="row">
+            <div class="container-footer col-md-4">
+                <p>&copy; Nicolas Fonseca S 2022</p>
+            </div>
+            <div class="container-footer col-md-4">
+                <h3>Redes sociales</h3>
+                <ul>
+                    <li><a href=""> <i class="fa-brands fa-github"> </a></i></li>
+                    <li><a href=""> <i class="fa-brands fa-linkedin"> </a></i></li>
+                </ul>
+            </div>
+            <div class="container-footer col-md-4">
+                <h3>Anima Dreams</h3>
+            </div>
+        </div>
+    </footer>
+    <script src="js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>
